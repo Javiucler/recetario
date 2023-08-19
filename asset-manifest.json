@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recetario/static/css/main.12878a53.css",
+    "main.js": "/recetario/static/js/main.9081992e.js",
+    "static/js/787.5d58bbc5.chunk.js": "/recetario/static/js/787.5d58bbc5.chunk.js",
+    "index.html": "/recetario/index.html",
+    "main.12878a53.css.map": "/recetario/static/css/main.12878a53.css.map",
+    "main.9081992e.js.map": "/recetario/static/js/main.9081992e.js.map",
+    "787.5d58bbc5.chunk.js.map": "/recetario/static/js/787.5d58bbc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12878a53.css",
+    "static/js/main.9081992e.js"
+  ]
+}
