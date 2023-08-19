@@ -7,7 +7,7 @@ import { RecipeDetailed } from "./recipe_detailed";
 function RecipesScreen() {
   const [recipe, setRecipe] = React.useState<null | Recipe>(null);
   if (recipe) {
-    return <RecipeDetailed recipe={recipe} />;
+    return <RecipeDetailed setRecipe={setRecipe} recipe={recipe} />;
   } else {
     return <AllRecipes recipes={testRecipe} setRecipe={setRecipe} />;
   }
