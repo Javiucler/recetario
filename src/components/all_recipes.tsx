@@ -8,11 +8,11 @@ interface AllRecipesProps {
 export const AllRecipes = (props: AllRecipesProps) => {
   return (
     <div >
-    <h1 className="text-center mb-10 text-secondary" style={{ fontWeight: 'bold', fontSize:32 }}>Recetario</h1>
+    <h1 className="text-center mb-10 text-primary" style={{ fontWeight: 'bold', fontSize:32 }}>Recetario</h1>
       {props.recipes.map((recipe, i) => {
         return (
           <div
-            className="grid grid-rows-1 grid-flow-col pl-10  mt-2 outline outline-1 text-primary"
+            className="grid grid-rows-1 grid-flow-col pl-10  mt-2 outline outline-1 "
             key={recipe.title}
             onClick={() => props.setRecipe(recipe)}
             style={{cursor: 'pointer'}}

@@ -18,7 +18,7 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
           />
         </div>
         <h1
-        className="text-secondary"
+        className=""
           style={{ fontWeight: "bold", fontSize: 32 }}
         >
           {props.recipe.title}
@@ -29,7 +29,7 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
           {props.recipe.description}
         </p>
         <h2
-          className="pl-20 pt-20 text-center text-secondary"
+          className="pl-20 pt-20 text-center "
           style={{ fontWeight: "600", fontSize: 26 }}
         >
           Ingredientes:
@@ -44,7 +44,7 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
 
         <div className="pt-10">
           <h2
-            className="text-center text-secondary"
+            className="text-center"
             style={{ fontWeight: "600", fontSize: 26 }}
           >
             Pasos:
