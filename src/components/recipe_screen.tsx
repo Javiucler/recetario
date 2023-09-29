@@ -6,11 +6,15 @@ import { RecipeDetailed } from "./recipe_detailed";
 
 function RecipesScreen() {
   const [recipe, setRecipe] = React.useState<null | Recipe>(null);
-  if (recipe) {
-    return <RecipeDetailed setRecipe={setRecipe} recipe={recipe} />;
-  } else {
-    return <AllRecipes recipes={testRecipe} setRecipe={setRecipe} />;
-  }
+  return (
+    <div className="bg-background w-screen h-screen">
+      {recipe ? (
+        <RecipeDetailed setRecipe={setRecipe} recipe={recipe} />
+      ) : (
+        <AllRecipes recipes={testRecipe} setRecipe={setRecipe} />
+      )}
+    </div>
+  );
 }
 
 export default RecipesScreen;

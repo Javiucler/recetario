@@ -9,7 +9,7 @@ interface RecipeDetailedProps {
 export const RecipeDetailed = (props: RecipeDetailedProps) => {
   return (
     <div className="flex grid grid-flow-row auto-row-max justify-center font-serif">
-      <div className="grid grid-flow-col">
+      <div className="grid grid-flow-col text-primary">
         <div className="pl-10 flex ">
           <BiArrowBack
             size={50}
@@ -18,6 +18,7 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
           />
         </div>
         <h1
+        className="text-secondary"
           style={{ fontWeight: "bold", fontSize: 32 }}
         >
           {props.recipe.title}
@@ -28,7 +29,7 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
           {props.recipe.description}
         </p>
         <h2
-          className="pl-20 pt-20 text-center"
+          className="pl-20 pt-20 text-center text-secondary"
           style={{ fontWeight: "600", fontSize: 26 }}
         >
           Ingredientes:
@@ -43,10 +44,9 @@ export const RecipeDetailed = (props: RecipeDetailedProps) => {
 
         <div className="pt-10">
           <h2
-            className="text-center"
+            className="text-center text-secondary"
             style={{ fontWeight: "600", fontSize: 26 }}
           >
-            {" "}
             Pasos:
           </h2>
           {props.recipe.steps.map((step, index) => {
